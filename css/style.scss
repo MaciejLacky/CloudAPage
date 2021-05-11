@@ -1,0 +1,171 @@
+/* Main page */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  $ruler: 16px;
+$color-main: #0277bd;
+$color-bg: #EBECF0;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+$color-black:#000000;
+$color-second: #61677C;
+
+body, html {
+  background-color:$color-bg;
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: $ruler;
+}
+
+div, p {
+  color: $color-shadow;
+  text-shadow: 1px 1px 1px $color-white;
+}
+
+
+form {
+  padding: $ruler;
+  width: $ruler*20;
+  margin: 10% auto;
+}
+
+.menu{
+  color:$color-second;
+  background-color: $color-main;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px $color-main,  5px 5px 20px $color-main;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  width: 15%;
+  height: 100vh;
+}
+
+.segment {
+  padding: $ruler*2 0;
+  text-align: center;
+}
+.segment img{
+  width: 80%;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: $ruler;
+  border-radius: $ruler*20;
+  padding: $ruler;
+  background-color:$color-bg;
+  text-shadow: 1px 1px 0 $color-white;
+}
+
+label {
+  display: block;
+  margin-bottom: $ruler*1.5;
+  width: 100%;
+}
+
+input {
+  margin-right: $ruler/2;
+  box-shadow:  inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow:  inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+}
+
+button {
+  color:$color-second;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  
+  &:hover {
+    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  }
+  
+  &:active {
+    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+  
+  .icon {
+    margin-right: $ruler/2;
+  }
+  
+  &.unit {
+    border-radius: $ruler/2;
+    line-height: 0;
+    width: $ruler*3;
+    height: $ruler*3;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 $ruler/2;
+    font-size: $ruler*1.5;
+    
+    .icon {
+      margin-right: 0; 
+    }
+  }
+  
+  &.color-main {
+    display: block;
+    width: 100%;
+    color:$color-main;
+    
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  label {
+    margin: 0;
+    flex: 1;
+  }
+}
+
+.link{
+ text-align: center;
+  
+}
+.link a{
+  text-decoration: none;
+  color:$color-second;
+}
+center{
+  color:$color-second;
+  font-size: 10px;
+}
+  
+  
+
+
+
+
+
+
+
+
+

@@ -64,14 +64,70 @@
           <div class="workspace-grid">
            
             <div class="card-main-left">
-              <h1>opłaty</h1>
+              <div class="payment">
+                <img src="/img/platnosciIkona.png" alt="ikona platnosci">
+                <p>Bardzo nas to cieszy! <br/>Nie zalegasz z płatnościami</p>
+    
+              </div>
+              <div class="payment-history">
+                <h3>Historia wpłat</h3>
+                <div class="payment-history-buttons">
+                  <button>Przyszłe </button>
+                <button>Zaległe</button>
+                <button>Przelew</button>
+                </div>
+                
+              </div>
+              <div style="clear: both;"></div>
             </div>
             
-            <div class="card-main-left">
-              <h1>do końca semestru</h1>
+            <div class="card-main-left">  
+              <h3>Postępy w nauce</h3>          
+              <div class="bar">
+                <svg>
+                  <circle cx='50%' cy='50%' r="50%"></circle>
+                </svg>
+                <p class="text-chart">do końca semestru<br><span>50 dni</span></p>
+              </div>
+              <div class="bar" style="float: right;">
+                <svg>
+                  <circle cx='50%' cy='50%' r="50%"></circle>
+                </svg>
+                <p class="text-chart">średnia ocen<br><span>5.0</span></p>
+              </div>
+              
             </div>
             <div class="card-main-right">
-              <h1>zadania do oddania</h1>
+              <h3>Zbilżający się termin zadań</h3>
+              <div class="agenda-line"></div>
+              <div class="tasks">
+                <div class="task">
+                  <p>Programowanie aplikacji biznesowych</p>
+                  <p>Zadanie: <span>Operacje z kluczem obcym</span></p>
+                  <p>Punkty: 5</p>
+                  <p>Termina realizacji: <span>13.06.2021</span></p>
+                </div>
+                <button><i class="material-icons">publish</i></button>          
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <p>Programowanie aplikacji biznesowych</p>
+                  <p>Zadanie: <span>Logika biznesowa</span></p>
+                  <p>Punkty: 5</p>
+                  <p>Termina realizacji: <span>13.06.2021</span></p>
+                </div>
+                <button><i class="material-icons">publish</i></button>          
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <p>Programowanie aplikacji biznesowych</p>
+                  <p>Zadanie: <span>Baza danych</span></p>
+                  <p>Punkty: 5</p>
+                  <p>Termina realizacji: <span>13.06.2021</span></p>
+
+                </div>
+                <button><i class="material-icons">publish</i></button>          
+              </div>
             </div>
             
             <div class="card-main-a">
@@ -83,11 +139,67 @@
               <h1>aktualność</h1>
             </div>
             <div class="card-second-a">
-              <h1>Najbliższe spotkanie</h1>
+              <div class="agenda">
+                <h3>Nabliższe zajęcia:  <span> sobota 25.06</span></h3>
+                <button><i class="material-icons">arrow_right</i></button>
+                <button><i class="material-icons">arrow_left</i></button>
+                <div style="clear: both;"></div>
+                <div class="agenda-line"></div>
+                <div class="agenda-items">
+                  <div class="agenda-item-left">                 
+                    <p><span>Programowanie aplikacji desktopowych</span></p>
+                    <p>wykład</p>
+                    <p>mgr Artur Kornatka</p>
+                  </div>
+                  <div class="agenda-item-right">                  
+                    <p><span>8.00 - 10.15</span></p>
+                    <p>C117</p>
+                    <p>Transmisja</p>
+                  </div>                  
+                </div>
+                <div class="agenda-items">
+                  <div class="agenda-item-left">                 
+                    <p><span>Programowanie aplikacji desktopowych</span></p>
+                    <p>wykład</p>
+                    <p>mgr Artur Kornatka</p>
+                  </div>
+                  <div class="agenda-item-right">                  
+                    <p><span>10.30 - 12.15</span></p>
+                    <p>C117</p>
+                    <p>Transmisja</p>
+                  </div>                  
+                </div>
+                <div class="agenda-items">
+                  <div class="agenda-item-left">                 
+                    <p><span>Bazy danych</span></p>
+                    <p>wykład</p>
+                    <p>mgr Artur Kornatka</p>
+                  </div>
+                  <div class="agenda-item-right">                  
+                    <p><span>14.00 - 15.15</span></p>
+                    <p>C117</p>
+                    <p>Transmisja</p>
+                  </div>                  
+                </div>
+                <div class="agenda-items">
+                  <div class="agenda-item-left">                 
+                    <p><span>Seminarium dyplomowe</span></p>
+                    <p>wykład</p>
+                    <p>mgr Artur Kornatka</p>
+                  </div>
+                  <div class="agenda-item-right">                  
+                    <p><span>8.00 - 10.15</span></p>
+                    <p>C117</p>
+                    <p>Transmisja</p>
+                  </div>                  
+                </div>
+             </div>
             </div>
             <div class="card-second-b">
-              <h1>film</h1>
+              <h1>Najbliższe spotkanie</h1>
             </div>
+           
+           
             
           </div>
           </div>
@@ -173,6 +285,7 @@
      
       </footer>
     </div>
+    <script src="calendar.js"></script>
     <script src="tabPage.js"></script>
  </body>
 </html>

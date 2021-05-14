@@ -9,7 +9,8 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  $ruler: 16px;
+$ruler: 1vw;
+$rulerx2: 1.4vw;
 $color-main: #0277bd;
 $color-bg: #EBECF0;
 $color-shadow: #BABECC;
@@ -18,6 +19,8 @@ $color-black:#000000;
 $color-second: #61677C;
 $color-linear: linear-gradient( to right, rgb(2, 119, 189) , rgb(99, 166, 48));
 $color-linear-short: linear-gradient( to right, rgb(2, 119, 189) -20% , rgb(99, 166, 48)60%);
+
+
 
 body, html {
   background-color:$color-bg;
@@ -204,7 +207,7 @@ center{
  
 }
 .user i{
-  font-size: 2vw !important;
+  font-size: $ruler*2 !important;
   
 }
 .user:hover{
@@ -223,7 +226,7 @@ center{
   transition: ease-in-out 0.4s;
  }
  .logout i{
-  font-size: 2vw !important;
+  font-size: $ruler*2!important;
  }
  .logout:hover{
   box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
@@ -294,7 +297,7 @@ center{
 
 }
 .material-icons{
-  font-size: 20px !important;
+  font-size: $ruler*1.2 !important;
   
 }
 .social-menu{
@@ -324,6 +327,11 @@ center{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(10, 30vh) ;
+}
+@media screen and (max-width: 1200px) {
+  .workspace-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .card-main-left{
   color:$color-second;
@@ -394,6 +402,13 @@ center{
   grid-column: 3/4;
  
 }
+@media screen and (max-width: 1200px) {
+  .card-second-a{
+    grid-column: 1/2;
+  }
+  
+  
+}
 
 .card-second-b{
   align-self: center;
@@ -406,6 +421,34 @@ center{
   grid-row: 3/5;
   grid-column: 3/4;
  
+}
+@media screen and (max-width: 1200px) {
+  .card-second-b{
+    //grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  
+  
+}
+.card-second-c{
+  align-self: center;
+  justify-self: center;
+  color:$color-second;
+  border-radius: 30px;
+  box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  width: 90%;
+  height: 90%;
+  grid-row: 3/5;
+  grid-column: 3/4;
+ 
+}
+@media screen and (max-width: 1200px) {
+  .card-second-c{
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  
+  
 }
 
 .payment{
@@ -420,7 +463,7 @@ center{
 .payment p{
   padding-top: 1.5vw;
   color: $color-second;
-  font-size: 1.1vw;
+  font-size: $ruler*1.1;
  
 }
 .payment img{
@@ -435,7 +478,7 @@ center{
   padding-top: 1.5vw;
   padding-bottom: 1.5vw;
   color: $color-second;
-  font-size: 1.0vw;
+  font-size: $ruler*1.1;
 }
 .payment-history-buttons{
   margin-left: 3vw;
@@ -448,7 +491,7 @@ center{
   width: 5vw;
 }
 .card-main-left h3{
-  font-size: 1.0vw;
+  font-size: $ruler;
 }
 
 .bar {
@@ -461,6 +504,14 @@ center{
   overflow: hidden;
   margin: 1vw;
 }
+@media screen and(max-width: 1420px ) {
+  .bar{
+    height: 100px;
+    width: 100px;
+  }
+}
+  
+
 .bar:after {
   content: "";
   position: absolute;
@@ -488,6 +539,11 @@ svg circle {
   stroke-dasharray: 630px;
   /* stroke-dashoffset: 630px; */
 }
+@media screen and(max-width: 1420px ) {
+  svg circle{
+    stroke-width: 18px;
+  }
+}
 .bar:nth-child(1) svg circle {
   animation: bar_1 1s ease forwards;
 }
@@ -497,14 +553,14 @@ svg circle {
 .text-chart {
   position: absolute;
   color: $color-second;
-  font-size: 0.8vw;
+  font-size: $ruler*0.8;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .text-chart span{
- font-size: 1.2vw;
+ font-size: $ruler* 1.2;
 }
 /* svg circle {
 	stroke-dashoffset: calc(950 - (950*10) / 100);
@@ -528,7 +584,7 @@ svg circle {
 .card-main-right h3{
   margin-top: 1.5vw;
   margin-left: 1.5vw;
-  font-size: 1vw;
+  font-size: $ruler;
 }
 .tasks{
   margin: 1vw;
@@ -540,11 +596,11 @@ svg circle {
 }
 .task p{
   color: $color-second !important;
-  font-size: 0.9vw;
+  font-size: $ruler*0.9;
 }
 .task p span{
   font-weight: 600;
-  font-size: 0.9vw;
+  font-size: $ruler*0.9;
 }
 .tasks button{
   float: right;
@@ -553,7 +609,7 @@ svg circle {
   padding: 5px;
 }
 .agenda h3{
-  font-size: 1vw;
+  font-size: $ruler;
   color: $color-second;
   padding-top: 1vw;
   padding-left: 1vw;
@@ -566,7 +622,7 @@ svg circle {
   margin-right: 1vw;
 }
 .agenda h3 span{
-  font-size: 1.2vw;
+  font-size: $ruler*1.2;
 }
 .agenda-line{
   width: 90%;
@@ -590,7 +646,7 @@ svg circle {
 }
 .agenda-item-left p{
   color: $color-second;
-  font-size: 0.9vw ;
+  font-size: $ruler*0.9 ;
 }
 .agenda-item-left p span{
   color: $color-second;
@@ -598,7 +654,7 @@ svg circle {
 }
 .agenda-item-right p{
   color: $color-second;
-  font-size: 0.9vw ;
+  font-size: $ruler*0.9 ;
 }
 .agenda-item-right p span{
   color: $color-second;
@@ -610,7 +666,20 @@ svg circle {
   border-top-right-radius: 30px;
 }
 .card-second-b h3{
-  font-size: 1.4vw;
+  font-size: $ruler* 1.4;
+  
+  color: $color-second;
+  padding-top: 2vw;
+  padding-left: 1vw;
+  
+}
+.card-second-c video{
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card-second-c h3{
+  font-size: $ruler* 1.4;
   
   color: $color-second;
   padding-top: 2vw;
@@ -638,46 +707,48 @@ svg circle {
   width: 100%;
   height: 100%;
   border-radius: 30px;
+  
 }
+
 .news-grid h3{
   padding: 1vw;
   color: $color-second;
   grid-row: 1/2;
  grid-column: 2/4;
- font-size: 1vw;
+ font-size: $ruler;
 }
 .news-grid p{
   padding: 1vw;
   color: $color-second;
   grid-row: 2/4;
   grid-column: 2/5;
-  font-size: 0.9vw;
+  font-size: $ruler*0.9;
  }
  .news-grid a{
    grid-row: 3/4;
    grid-column: 4/5 ;
-   font-size: 0.9vw;
+   font-size: $ruler*0.9;
    cursor: pointer;
    font-weight: 600;
    padding-top: 5px;
    
  }
  .news-grid a i{
-   font-size: 1vw !important;
+   font-size: $ruler !important;
  }
  .news-grid span{
    margin: 1vw;
    color: $color-second;
   grid-row: 1/2;
   grid-column: 4/5 ;
-  font-size: 0.9vw;
+  font-size: $ruler*0.9;
  }
 
  //TabPage filtr
  .card-second-a h3{
    padding-top: 2vw;
    padding-left: 1vw;
-   font-size: 1.1vw;
+   font-size: $ruler*1.1;
  }
 
  .label {
@@ -696,8 +767,8 @@ svg circle {
   isolation: isolate;
  
   position: relative;
-  height: 30px;
-  width: 60px;
+  height: 1.5vw;
+  width: 3vw;
   border-radius: 15px;
   overflow: hidden;
   box-shadow:
@@ -732,9 +803,10 @@ svg circle {
 .button-filtr{
   color: $color-second;
   width: 10vw;
+  margin-top: -10px;
   margin-left: 5.5vw;
   padding: 1vw;
-  font-size: 1vw;
+  font-size: $ruler;
 }
 
  

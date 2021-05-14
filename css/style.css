@@ -15,9 +15,32 @@ body, html {
 }
 
 body, p, input, select, textarea, button {
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.2px;
   font-size: 1vw;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body, button, input {
+    font-size: 1.4vw !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body, button, input {
+    font-size: 1.6vw !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  body, button, input {
+    font-size: 2vw !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body, button, input {
+    font-size: 2.4vw !important;
+  }
 }
 
 div, p {
@@ -389,10 +412,17 @@ center {
       grid-template-rows: repeat(10, 30vh);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .workspace-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workspace-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -429,6 +459,17 @@ center {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+@media screen and (max-width: 768px) {
+  .card-main-right {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
 }
 
 .card-main-a {
@@ -536,11 +577,17 @@ center {
   grid-column: 3/4;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .card-second-b {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-second-b {
+    display: none;
   }
 }
 
@@ -564,7 +611,7 @@ center {
   grid-column: 3/4;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .card-second-c {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -572,6 +619,12 @@ center {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-second-c {
+    display: none;
   }
 }
 

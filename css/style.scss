@@ -27,9 +27,29 @@ body, html {
 }
 
 body, p, input, select, textarea, button {
-    font-family: 'Montserrat', sans-serif;
+    
     letter-spacing: -0.2px;
     font-size: $ruler;
+}
+@media  screen and(min-width: 992px) and(max-width: 1200px) {
+  body, button, input{
+    font-size: $ruler*1.4 !important;
+  }
+}
+@media  screen and(min-width: 768px) and(max-width: 992px) {
+  body, button, input{
+    font-size: $ruler*1.6 !important;
+  }
+}
+@media  screen and(min-width: 576px) and(max-width: 768px) {
+  body, button, input{
+    font-size: $ruler*2 !important;
+  }
+}
+@media  screen and(max-width: 576px) {
+  body, button, input{
+    font-size: $ruler*2.4 !important;
+  }
 }
 
 div, p {
@@ -328,9 +348,15 @@ center{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(10, 30vh) ;
 }
-@media screen and (max-width: 1200px) {
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .workspace-grid{
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .workspace-grid{
+    grid-template-columns: 1fr;
   }
 }
 .card-main-left{
@@ -354,6 +380,13 @@ center{
   height: 90%;
   grid-row: 1/3;
   grid-column: 2/3;
+}
+
+@media screen and (max-width: 768px) {
+  .card-main-right{
+    grid-row: 3/5;
+    grid-column: 1/2;
+  }
 }
 .card-main-a{
   color:$color-second;
@@ -402,12 +435,11 @@ center{
   grid-column: 3/4;
  
 }
+
 @media screen and (max-width: 1200px) {
   .card-second-a{
     grid-column: 1/2;
   }
-  
-  
 }
 
 .card-second-b{
@@ -422,13 +454,15 @@ center{
   grid-column: 3/4;
  
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .card-second-b{
-    //grid-row: 1/3;
     grid-column: 2/3;
   }
-  
-  
+}
+@media screen and (max-width: 768px) {
+  .card-second-b{
+   display: none;
+  }
 }
 .card-second-c{
   align-self: center;
@@ -442,10 +476,17 @@ center{
   grid-column: 3/4;
  
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .card-second-c{
     grid-row: 1/3;
     grid-column: 2/3;
+  }
+  
+  
+}
+@media screen and (max-width: 768px) {
+  .card-second-c{
+    display: none;
   }
   
   

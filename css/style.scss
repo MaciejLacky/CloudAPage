@@ -16,7 +16,8 @@ $color-shadow: #BABECC;
 $color-white: #FFF;
 $color-black:#000000;
 $color-second: #61677C;
-$color-linear: linear-gradient( to right, rgb(2, 119, 189), rgb(99, 166, 48));
+$color-linear: linear-gradient( to right, rgb(2, 119, 189) , rgb(99, 166, 48));
+$color-linear-short: linear-gradient( to right, rgb(2, 119, 189) -20% , rgb(99, 166, 48)60%);
 
 body, html {
   background-color:$color-bg;
@@ -31,6 +32,20 @@ body, p, input, select, textarea, button {
 div, p {
   color: $color-shadow;
   text-shadow: 1px 1px 1px $color-white;
+}
+.text-linear-gradient {
+	//text-transform: uppercase;
+	background: $color-linear;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+.text-linear-gradient-short {
+	//text-transform: uppercase;
+	background: $color-linear-short;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
 
 
@@ -534,6 +549,7 @@ svg circle {
   float: right;
   margin-left: 1vw;
   margin-top: 1vw;
+  padding: 5px;
 }
 .agenda h3{
   font-size: 1vw;
@@ -587,6 +603,71 @@ svg circle {
   color: $color-second;
   font-weight: 600;
 }
+.card-second-b video{
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card-second-b h3{
+  font-size: 1.4vw;
+  
+  color: $color-second;
+  padding-top: 2vw;
+  padding-left: 1vw;
+  
+}
+.mobile-links{
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+.mobile-links a img{
+  width: 45%;
+}
+.news-grid{
+  //height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 140px;
+  grid-template-rows: 50px 1fr 30px ;
+}
+.news-grid img{
+  grid-column: 1/2;
+  grid-row: 1/4;
+  margin: 10px;
+  width: 100%;
+  //height: 80%;
+  border-radius: 30px;
+}
+.news-grid h3{
+  padding: 1vw;
+  color: $color-second;
+  grid-row: 1/2;
+ grid-column: 2/4;
+ font-size: 1vw;
+}
+.news-grid p{
+  padding: 1vw;
+  color: $color-second;
+  grid-row: 2/4;
+  grid-column: 2/5;
+  font-size: 0.9vw;
+ }
+ .news-grid a{
+   grid-row: 3/4;
+   grid-column: 4/5 ;
+   font-size: 0.9vw;
+   cursor: pointer;
+   font-weight: 600;
+   padding-top: 5px;
+   
+ }
+ .news-grid span{
+   margin: 1vw;
+   color: $color-second;
+  grid-row: 1/2;
+  grid-column: 4/5 ;
+  font-size: 0.9vw;
+ }
+
 
 
 

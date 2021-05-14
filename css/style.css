@@ -154,6 +154,7 @@ button.color-main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 22vw;
 }
 
 .input-group label {
@@ -806,6 +807,7 @@ svg circle {
   grid-row: 1/4;
   margin: 10px;
   width: 100%;
+  height: 100%;
   border-radius: 30px;
 }
 
@@ -846,6 +848,10 @@ svg circle {
   padding-top: 5px;
 }
 
+.news-grid a i {
+  font-size: 1vw !important;
+}
+
 .news-grid span {
   margin: 1vw;
   color: #61677C;
@@ -856,5 +862,70 @@ svg circle {
   -ms-grid-column-span: 1;
   grid-column: 4/5;
   font-size: 0.9vw;
+}
+
+.card-second-a h3 {
+  padding-top: 2vw;
+  padding-left: 1vw;
+  font-size: 1.1vw;
+}
+
+.label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.label-text {
+  margin-left: 16px;
+  color: #61677C;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+          box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 15px;
+  -webkit-transform: translate3d(-75%, 0, 0);
+          transform: translate3d(-75%, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  transition: -webkit-transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35), -webkit-transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  -webkit-box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+          box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+}
+
+.toggle-state:checked ~ .indicator {
+  -webkit-transform: translate3d(25%, 0, 0);
+          transform: translate3d(25%, 0, 0);
+  background-color: #0277bd;
+}
+
+.button-filtr {
+  color: #61677C;
+  width: 10vw;
+  margin-left: 5.5vw;
+  padding: 1vw;
+  font-size: 1vw;
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,19 +27,19 @@ body, p, input, select, textarea, button {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body, button, input {
-    font-size: 1.6vw !important;
+    font-size: 2vw !important;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   body, button, input {
-    font-size: 2vw !important;
+    font-size: 3vw !important;
   }
 }
 
 @media screen and (max-width: 576px) {
   body, button, input {
-    font-size: 2.4vw !important;
+    font-size: 4vw !important;
   }
 }
 
@@ -211,6 +211,13 @@ center {
       grid-template-rows: 10vh 1fr;
 }
 
+@media screen and (max-width: 768px) {
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .menu-top {
   color: #61677C;
   -ms-grid-column: 1;
@@ -241,6 +248,19 @@ center {
   grid-column: 1/2;
 }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .menu-top a img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu-top a img {
+    margin-top: 3vw;
+    width: 120%;
+  }
+}
+
 .user {
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -255,6 +275,15 @@ center {
   cursor: pointer;
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
+}
+
+@media screen and (max-width: 992px) {
+  .user {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    margin-right: 4vw;
+  }
 }
 
 .user i {
@@ -282,6 +311,14 @@ center {
   transition: ease-in-out 0.4s;
 }
 
+@media screen and (max-width: 992px) {
+  .logout {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+  }
+}
+
 .logout i {
   font-size: 2vw !important;
 }
@@ -305,6 +342,54 @@ center {
   grid-column: 3/4;
   width: 40%;
   cursor: pointer;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .rus, .ang {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .rus, .ang {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .user i, .logout i {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .user i, .logout i {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .user i, .logout i {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .user i, .logout i {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .user i, .logout i {
+    font-size: 4vw !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user, .logout {
+    display: none;
+  }
 }
 
 .tablink {
@@ -331,6 +416,66 @@ center {
   height: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .tablink i {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .tablink i {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .tablink i {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .tablink span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .tablink i {
+    font-size: 4vw !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .tablink span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tablink span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tablink i {
+    font-size: 5vw !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .tablink {
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tablink {
+    margin-top: 4vw;
+  }
+}
+
 .menu-side {
   color: #61677C;
   -ms-grid-column: 1;
@@ -340,6 +485,12 @@ center {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin-top: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-side {
+    display: none;
+  }
 }
 
 .card-menu li {
@@ -403,13 +554,19 @@ center {
   grid-row: 2/3;
 }
 
+@media screen and (max-width: 768px) {
+  .workspace {
+    border-top-left-radius: 0px;
+  }
+}
+
 .workspace-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: (30vh)[10];
-      grid-template-rows: repeat(10, 30vh);
+  -ms-grid-rows: (300px)[10];
+      grid-template-rows: repeat(10, 300px);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {

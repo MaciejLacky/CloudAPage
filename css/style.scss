@@ -313,6 +313,54 @@ center{
     width: 80%;
   }
 }
+
+.mobile-menu-button{
+  font-size:$ruler*8;
+  cursor: pointer;
+  color: $color-second;
+  margin-top: 3vw;
+  grid-column: 4/6;
+  padding: 0 5px;
+  box-shadow: 1px 1px 2px $color-shadow, -1px -1px 2px $color-white;
+}
+.mobile-menu-button:active{
+  box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+}
+@media  screen  and(min-width: 768px) {
+  .mobile-menu-button{
+    display: none;
+  }
+}
+@media  screen and(min-width: 576px) and(max-width: 768px) {
+  .mobile-menu-button{
+    font-size: $ruler*4 !important;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EBECF0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-style: normal;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: $color-second;
+  text-decoration: unset;
+}
+
+
  .tab-buttons{
  
    
@@ -392,7 +440,7 @@ center{
 @media  screen and(max-width: 576px) {
   .tablink i{
    
-    font-size: $ruler*5 !important;
+    font-size: $ruler*6 !important;
   }
 }
 @media  screen and(min-width: 576px) and(max-width: 768px) {
@@ -429,6 +477,7 @@ center{
   cursor: pointer;
   border-radius: 20px;
   transition: ease-in-out 0.4s;
+  font-style: normal;
  
 }
 .card-menu li:hover{
@@ -442,6 +491,16 @@ center{
 .card-menu li a span{
  padding-left: 5%;
 
+}
+@media  screen and(min-width: 576px) and(max-width: 768px) {
+  .card-menu li a i {
+    font-size: $ruler*4 !important;
+  }
+}
+@media  screen and(max-width: 576px) {
+  .card-menu li a i {
+    font-size: $ruler*6 !important;
+  }
 }
 .material-icons{
   font-size: $ruler*1.2 !important;

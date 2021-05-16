@@ -374,6 +374,61 @@ center {
   }
 }
 
+.mobile-menu-button {
+  font-size: 8vw;
+  cursor: pointer;
+  color: #61677C;
+  margin-top: 3vw;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  padding: 0 5px;
+  -webkit-box-shadow: 1px 1px 2px #BABECC, -1px -1px 2px #FFF;
+          box-shadow: 1px 1px 2px #BABECC, -1px -1px 2px #FFF;
+}
+
+.mobile-menu-button:active {
+  -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+          box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .mobile-menu-button {
+    font-size: 4vw !important;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EBECF0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-style: normal;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #61677C;
+  text-decoration: unset;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .user i, .logout i {
     font-size: 3vw !important;
@@ -460,7 +515,7 @@ center {
 
 @media screen and (max-width: 576px) {
   .tablink i {
-    font-size: 5vw !important;
+    font-size: 6vw !important;
   }
 }
 
@@ -505,6 +560,7 @@ center {
   border-radius: 20px;
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
+  font-style: normal;
 }
 
 .card-menu li:hover {
@@ -519,6 +575,18 @@ center {
 
 .card-menu li a span {
   padding-left: 5%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .card-menu li a i {
+    font-size: 4vw !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-menu li a i {
+    font-size: 6vw !important;
+  }
 }
 
 .material-icons {

@@ -53,6 +53,7 @@ div, p {
 }
 
 
+
 form {
   padding: $ruler;
   width: $ruler*20;
@@ -624,10 +625,16 @@ center{
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .workspace-grid{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(20, 300px) ;
+  }
+}
+@media screen and (max-width: 576px) {
+  .workspace-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(20, auto) ;
   }
 }
 .card-main-left{
@@ -657,6 +664,12 @@ center{
   .card-main-right{
     grid-row: 3/5;
     grid-column: 1/2;
+  }
+}
+@media  screen and(max-width: 576px) {
+  .card-main-right {
+    margin-top: 20px;
+   height: 350px;
   }
 }
 .card-main-a{
@@ -711,6 +724,12 @@ center{
 @media screen and (max-width: 1200px) {
   .card-second-a{
     grid-column: 1/2;
+  }
+}
+@media  screen and(max-width: 576px) {
+  .card-second-a {
+    margin-top: 20px;
+   height: 350px;
   }
 }
 
@@ -1095,7 +1114,7 @@ svg circle {
 }
 @media  screen and(max-width: 576px) {
   .agenda-item-left p, .agenda-item-right p, .agenda h3, .agenda h3 span, .task p, .task p span, .card-main-right h3,.card-main-left h3, .text-chart, .text-chart span {
-    font-size: $ruler*4 !important;
+    font-size: $ruler*3 !important;
     margin-top: 2vw;
   }
 }
@@ -1142,7 +1161,7 @@ svg circle {
 @media  screen and(max-width: 576px) {
   .news-grid  {
     grid-template-columns: 1fr ;
-    grid-template-rows: 200px auto auto 30px ;
+    grid-template-rows: 200px auto 300px 30px ;
   }
 }
 .news-grid img{
@@ -1239,7 +1258,8 @@ svg circle {
 }
  @media  screen and(max-width: 576px) {
   .news-grid a, .news-grid a i {
-    margin: 2vw;
+    margin-top: -80px;
+    margin-left: 5vw;
     grid-row: 4/5;
     grid-column: 1/2;
   }
@@ -1269,7 +1289,11 @@ svg circle {
    font-size: $ruler*2 !important;
   }
 }
-
+@media  screen and(max-width: 576px)  {
+  .news-grid span, .news-grid span i {
+    display: none;
+  }
+}
 
  @media  screen and(min-width: 992px) and(max-width: 1200px) {
   .payment-history-buttons button {

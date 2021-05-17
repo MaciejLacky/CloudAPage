@@ -68,7 +68,6 @@ button, input {
 label {
   display: block;
   margin-bottom: 1.5vw;
-  width: 100%;
 }
 
 input {
@@ -1077,7 +1076,14 @@ center {
   margin: 1vw;
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (min-width: 1200px) and (max-width: 992px) {
+  .bar {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1420px) {
   .bar {
     height: 100px;
     width: 100px;
@@ -1429,6 +1435,24 @@ svg circle {
   font-size: 1vw;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .news-grid h3 {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .news-grid h3 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .news-grid h3 {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .news-grid h3 {
     margin: 2vw;
@@ -1482,6 +1506,32 @@ svg circle {
   font-size: 1vw !important;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .news-grid a, .news-grid a i {
+    font-size: 1.3vw !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .news-grid a, .news-grid a i {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    margin-top: 1vw;
+    font-size: 1.6vw !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .news-grid a, .news-grid a i {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    margin-top: 1vw;
+    font-size: 2vw !important;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .news-grid a, .news-grid a i {
     margin: 2vw;
@@ -1504,6 +1554,26 @@ svg circle {
   -ms-grid-column-span: 1;
   grid-column: 4/5;
   font-size: 0.9vw;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .news-grid p, .news-grid span, .news-grid span i {
+    font-size: 1.3vw !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .news-grid p, .news-grid span, .news-grid span i {
+    margin-top: 1vw;
+    font-size: 1.6vw !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .news-grid p, .news-grid span, .news-grid span i {
+    margin-top: 1vw;
+    font-size: 2vw !important;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1545,6 +1615,24 @@ svg circle {
   font-size: 1.1vw;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card-second-a h3 {
+    font-size: 2vw !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .card-second-a h3 {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-second-a h3 {
+    font-size: 4vw !important;
+  }
+}
+
 .label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1569,6 +1657,22 @@ svg circle {
   overflow: hidden;
   -webkit-box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
           box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .toggle {
+    width: 10vw;
+    height: 3vw;
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toggle {
+    width: 15vw;
+    height: 6vw;
+    margin-left: 5vw;
+  }
 }
 
 .toggle-state {
@@ -1603,5 +1707,49 @@ svg circle {
   margin-left: 5.5vw;
   padding: 1vw;
   font-size: 1vw;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .button-filtr {
+    margin-top: 4vw;
+    width: 16vw;
+    height: 8vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button-filtr {
+    margin-top: 4vw;
+    width: 20vw;
+    height: 10vw;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .card-second-a input {
+    width: 70vw;
+    height: 8vw;
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-second-a input {
+    width: 70vw;
+    height: 10vw;
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .card-second-a button i {
+    font-size: 4vw !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-second-a button i {
+    font-size: 5vw !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
